@@ -1,6 +1,6 @@
 # Bentebent Github Pages
 
-[![Build Status](https://github.com/Bentebent/bentebent.github.io/workflows/pages-deploy/badge.svg)](https://github.com/Bentebent/bentebent.github.io/actions)
+[![Build and Deploy](https://github.com/Bentebent/bentebent.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/Bentebent/bentebent.github.io/actions/workflows/pages-deploy.yml)
 
 Repository for my personal website using Github Pages. Built using the Jekyll theme [Chirpy](https://chirpy.cotes.page/).
 
