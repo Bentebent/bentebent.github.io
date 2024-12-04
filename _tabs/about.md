@@ -8,12 +8,14 @@ order: 4
 
 This blog is mostly about:
 
-- Trying to learn new things and failing forward
-- Appreciating the human element of software engineering
-- Maybe some cool looking 3D graphics and games
+- Learning new things (and embracing failure along the way).
+- The human side of software engineering.
+- 3D graphics, games and everything in between.
 
 If you enjoy seeing the perspective of someone learning new things this might be the place for you. I mostly post about things I explore and new learnings I encounter in my day-to-day as a software engineer.
 
 ## About me
 
-Hello, I'm Tim and I currently do 3D things at IKEA. I'm a software engineer that loves anything software but especially game development and 3D graphics. I live in southern Sweden where I have been doing various kinds of software development since 2015. I always aspire [to thinking like the self-aware smol brained](https://grugbrain.dev/) and this blog is in many ways me exploring how to get better at that.
+Hi, I’m Tim! I’m a software engineer based in southern Sweden, currently working on 3D projects at IKEA. My passion lies in all things software, with a special love for game development and 3D graphics. I’ve been in the software world since 2015, dabbling in everything from traditional development to pushing pixels in exciting, immersive ways. I always aspire [to thinking like the self-aware smol brained](https://grugbrain.dev/) and this blog is in many ways me exploring how to get better at that.
+
+I have a lot of strong opinions that are weakly held and love to be challenged! Feel free to reach out or share your thoughts—I’d love to connect on anything that sparks your interest.
