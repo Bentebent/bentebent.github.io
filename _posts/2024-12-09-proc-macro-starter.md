@@ -135,7 +135,7 @@ pub fn example() -> &'static str {
 ```
 
 ### Setup
-Turns out there are even more steps before we can get to implementation. Because proc macros manipulate [token streams](https://doc.rust-lang.org/reference/procedural-macros.html#r-macro.proc.proc_macro.token-stream) they need to be deployed as a separate crate that is compiled before any downstream crate. Because of this proc macro crates also cannot export anything but macros. Because our macro depends on the struct `DeprecatedResponder` we actually need two crates to make this work. This is the workspace setup I used for this.
+Turns out there are even more steps before we can get to implementation. Because proc macros manipulate [token streams](https://doc.rust-lang.org/reference/procedural-macros.html#r-macro.proc.proc_macro.token-stream) they need to be deployed as a separate crate that is compiled before any downstream crate. This also means proc macro crates also cannot export anything but macros. Because our macro depends on the struct `DeprecatedResponder` we actually need two crates to make this work. This is the workspace setup I used for this.
 
 ```
 ├───.git
