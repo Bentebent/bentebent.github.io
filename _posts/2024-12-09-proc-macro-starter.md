@@ -135,7 +135,7 @@ pub fn example() -> &'static str {
 ```
 
 ### Setup
-Turns out there are even more steps before we can get to implementation. Because proc macros manipulate the [Abstract Syntax Tree (AST)](https://rustc-dev-guide.rust-lang.org/syntax-intro.html) they need to be deployed as a separate crate that is compiled before any downstream crate. Because of this proc macro crates also cannot export anything but macros. Because our macro depends on the struct `DeprecatedResponder` we actually need two crates to make this work. This is the workspace setup I used for this.
+Turns out there are even more steps before we can get to implementation. Because proc macros manipulate [token streams](https://doc.rust-lang.org/reference/procedural-macros.html#r-macro.proc.proc_macro.token-stream) they need to be deployed as a separate crate that is compiled before any downstream crate. Because of this proc macro crates also cannot export anything but macros. Because our macro depends on the struct `DeprecatedResponder` we actually need two crates to make this work. This is the workspace setup I used for this.
 
 ```
 ├───.git
@@ -211,7 +211,7 @@ int main() {
 ```
 It's simple and gets the job done but it has several downsides. As they get more advanced they become difficult to understand, maintain and debug. They're also considered [non-hygienic](https://en.wikipedia.org/wiki/Hygienic_macro) because they risk introducing variable conflicts, scope conflicts and multiple evaluation of arguments.
 
-Rust is able to dodge these issues at least partially by using the AST for macro implementations instead of relying on text substitution. Using the AST as a source allows the Rust compiler to maintain existing scoping. It also allows for name mangling in the generated code to avoid conflicts.
+Rust is able to dodge these issues at least partially by using the `TokenStream` that is parsed to a [Abstract Syntax Tree (AST)](https://rustc-dev-guide.rust-lang.org/syntax-intro.html) for macro implementations instead of relying on text substitution. Using the `TokenStream` as a source allows the Rust compiler to maintain existing scoping. It also allows for name mangling in the generated code to avoid conflicts.
 
 Let's look at the "unit" proc macro, a macro that when applied to a function returns the function in an unmodified state.
 
