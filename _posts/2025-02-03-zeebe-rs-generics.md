@@ -3,7 +3,7 @@ title: Generics, builders, pain
 date: 2025-02-03 01:00:00 +0100
 categories: [Programming, Rust]
 tags: [programming, rust]
-description: Send + Sync + 'crying
+description: Send + Sync + 'cry
 ---
 ## A quick look at zeebe-rs
 
@@ -230,7 +230,7 @@ error[E0119]: conflicting implementations of trait `OutputHandler` for type `()`
 
 Maybe I have some notes. This is where the proverbial hammer [SFINAE](https://en.wikipedia.org/wiki/Substitution_failure_is_not_an_error), competitor for the worst acronym ever next to [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization), rears its face. If I was writing C++ it would be a fairly natural pattern to just create a set of overload resolutions where anything that can be serialized is handled by the code above but `()`, which is technically serializable, just NOPs. My instincts said that monomorphization would solve the problem, maybe I even get it inlined by the compiler? Well I was wrong but at least the compiler told me in clear text. 
 
-I have a great love for C++ templates, especially after the introduction of [concepts](https://en.cppreference.com/w/cpp/language/constraints) in C++20. I feel like it really became possible to write templated/metaprogramming code where your successors would not use a photo of your face as a dartboard with this addition. The [specialization RFC](https://rust-lang.github.io/rfcs/1210-impl-specialization.html) has been around since 2015 but progress is looking [pretty dead](https://github.com/rust-lang/rust/issues/31844) right now so I wouldn't count on it for the near future. This is a good motivator for me to try and look into the differences between templates (specifically C++) and Rust generics so I hope to spend more time on that in my next project!
+I have a great love for C++ templates, especially after the introduction of [concepts](https://en.cppreference.com/w/cpp/language/constraints) in C++20. I feel like it really became possible to write templated/metaprogramming code where your successors would not use a photo of your face as a dartboard with this addition. The [specialization RFC](https://rust-lang.github.io/rfcs/1210-impl-specialization.html) has been around since 2015 but progress is looking [pretty dead](https://github.com/rust-lang/rust/issues/31844) right now so I wouldn't count on it for the near future. That would otherwise be a good solution for solving problems similar to what you would solve with basic SFINAE at least. This is a good motivator for me to try and look into the differences between templates (specifically C++) and Rust generics so I hope to spend more time on that in my next project!
 
 #### The callback trait
 Nevermind SFINAE, our new hammer is traits and everything looks like a nail! This is also where I kinda got lost in the intricacies of async in Rust. Let's look at the first implementation of my JobHandler trait.
