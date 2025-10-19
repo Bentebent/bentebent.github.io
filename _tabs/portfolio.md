@@ -45,7 +45,7 @@ Developed for Ludum Dare 46 using Unity, Pull the Levers! was intended to be a v
 ![Procedurally generated puzzle combinations](assets/img/levers.png)
 _Procedurally generated puzzle combinations_
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E2j5bvhvsqU?si=fzh6CD14yjPcf475" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embed/youtube.html id='E2j5bvhvsqU' %}
 
 ## Life Pact (2019)
 Life Pact was a procedurally generated roguelite developed for Ludum Dare 44 using Unity. The primary focus was providing an intense and varied experience with procedural level generation. The game can be found [here.](https://ldjam.com/events/ludum-dare/44/life-pact).
@@ -59,8 +59,7 @@ Life Pact was a procedurally generated roguelite developed for Ludum Dare 44 usi
 ![Hope you like a lot of bullets](assets/img/lifepact.png)
 _Hope you like a lot of bullets_
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qI1neV6P4Bg?si=9ahFyVinywN0dIRj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+{% include embed/youtube.html id='qI1neV6P4Bg' %}
 
 ## Kravall (2014)
 Kravall was a real time strategy game that was developed for a university course. The engine used for the game was entirely made from scratch by me and my team of classmates. My primary focus was on rendering and our GPGPU AI implementation.
@@ -75,6 +74,5 @@ Kravall was a real time strategy game that was developed for a university course
 ![A typical scene in Kravall](assets/img/kravall.png)
 _A typical scene in Kravall_
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4UdJ4TvmAu4?si=zP1picEgepeD_DGt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_DuY93gE6kY?si=roKAwyLOYWg4XVvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embed/youtube.html id='4UdJ4TvmAu4' %}
+{% include embed/youtube.html id='_DuY93gE6kY' %}
